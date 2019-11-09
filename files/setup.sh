@@ -11,6 +11,9 @@ if [ -z PYPI_DOMAIN -o -z PYPI_OPTION ];then
         fi
     fi
 fi
+if [ ! -d /data/python3.7.5 ];then
+    cp -r /home/python3.7.5 /data/
+fi
 if [ -f requirements.txt ];then
     /data/python3.7.5/bin/pip3 install -r requirements.txt
 fi
