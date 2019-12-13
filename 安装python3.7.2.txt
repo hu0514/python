@@ -1,0 +1,13 @@
+#这里以最3.7新版本的python3.7.2为例
+https://www.python.org/ftp/python/3.7.2/Python-3.7.2.tgz
+
+tar -xzvf Python-3.7.2.tgz
+cd Python-3.7.2
+
+./configure --prefix=/data/local/python3.7 --with-ssl
+make
+
+# 使用altinstall 只安装python命令到目录，不复制到/usr/bin下
+make altinstall
+# 使用install 会把python命令复制到/usr/bin下，覆盖原来的python版本
+make install
