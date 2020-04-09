@@ -11,3 +11,8 @@ make
 make altinstall
 # 使用install 会把python命令复制到/usr/bin下，覆盖原来的python版本
 make install
+
+
+#安装虚拟环境
+pip install virtualenv
+virtualenv 虚拟环境目录
